@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/CherifCode (1).png">
+    <link rel="stylesheet" href="../Css/connexion.css">
+    <title>Inscrivez-vous !</title>
+
+    <style>
+        .group_h2  {
+    margin-top: 25rem;
+    margin-bottom: 4rem;
+    margin-left: 200px;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.conteneur_connexion {
+    background-color: rgb(201, 193, 193);
+    padding-right: 200px;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+.conteneur_vide {
+    background:linear-gradient(white, rgb(234, 6, 44));
+    padding-right: 300px;
+    padding-left: 490px;
+    padding-top: 760px;
+    padding-bottom: 760px;
+}
+
+.existe span {
+    font-family: var(--font-family);
+    font-size: 1.3rem;
+}
+
+.existe a {
+    color: blue;
+    font-size: 17px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="conteneur">
+        <div class="conteneur_connexion">
+            <div class="connexion">
+             <div class="group_h2"> 
+                <h1>Inscrivez-vous </h1>
+             </div>
+   
+             <div class="group_saisie">
+               <div class="email">
+                   <label for="">Nom</label>
+               </div>
+               <div class="email_saisie">
+                   <input type="text" name="nom" placeholder="Entrez votre nom" size="30">
+               </div>
+               <div class="mdp">
+                   <label for="">Prenom</label>
+               </div>
+               <div class="mdp_saisie">
+                   <input type="text" placeholder="Entrez votre Prenom" name="prenom" size="30">
+               </div>
+               <div class="email">
+                 <label for="">Adresse E-mail</label>
+               </div>
+               <div class="email_saisie">
+                  <input type="email" placeholder="Entrez votre e-mail" name="email" size="30">
+               </div>
+               <div class="email">
+                 <label for="">Mot de passe</label>
+               </div>
+               <div class="email_saisie">
+                 <input type="password" placeholder="Entrez un mot de passe" name="mdp" size="30">
+               </div>
+               <div class="email">
+                 <label for="">Confirmer le mot de passe</label>
+               </div>
+               <div class="email_saisie">
+                 <input type="password" placeholder="Confirmer le mot de passe" name="cmdp" size="30">
+               </div>
+               <div class="submit">
+                   <input type="submit" value="valider"> 
+               </div>
+               <div class="existe">
+                 <span>Vous avez déjà un compte ?</span> <a href="connexion.html">Connectez-vous ici !</a>
+               </div>
+             </div>
+           </div>
+        </div>
+        <div class="conteneur_vide">
+          <span> rien</span>
+        </div>
+    </div>
+
+</body>
+</html>

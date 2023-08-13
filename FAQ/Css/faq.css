@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* debu avec le section */
+
+section {
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+     font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* modification de la faq */
+
+.faq {
+    max-width: 700px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.reponse {
+    max-height: 0;
+   overflow: hidden;
+   transition: max-height 1.4s ease;
+}
+
+.reponse p {
+     font-size: 25px;
+     padding-top: 20px;
+     line-height: 1.3;
+}
+
+.faq.active .reponse {
+     max-height: 300px;
+     animation: junior 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: .5s ease-in;
+}
+
+@keyframes junior {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

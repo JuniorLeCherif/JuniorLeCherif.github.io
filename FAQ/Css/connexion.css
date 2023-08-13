@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color_blue:blue;
+    --color_red:red;
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+   font-family: sans-serif;
+}
+
+.conteneur {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+}
+
+.conteneur_connexion {
+    background-color: rgb(201, 193, 193);
+    padding-right: 200px;
+    padding-top: 300px;
+    padding-bottom: 150px;
+}
+
+
+.conteneur_vide {
+    background:linear-gradient(white, rgb(234, 6, 44));
+    padding-right: 300px;
+    padding-left: 490px;
+    padding-top: 690px;
+    padding-bottom: 690px;
+}
+
+.conteneur_vide span {
+    display: none;
+}
+
+.group_h2 {
+    margin-top: 34rem;
+    margin-bottom: 4rem;
+    margin-left: 200px;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.group_saisie {
+    margin-left: 200px;
+}
+
+.email,.mdp {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    
+}
+
+.email_saisie input, .mdp_saisie input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font-family);
+    font-size: 25px;
+}
+.email_saisie input:focus, .mdp_saisie input:focus {
+    border: 4px solid rgb(64, 192, 235);
+    outline: none;
+    background-color: white;
+}
+.submit {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.submit input {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--color_blue);
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform 400ms ease-in-out;
+
+    &:hover {
+        background-color: rgb(14, 239, 14);
+        transform: translateX(10px);
+    }
+}
+
+.oublie {
+    margin-left: 70px;
+    font-size: 20px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
